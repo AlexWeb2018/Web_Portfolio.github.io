@@ -1,0 +1,296 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+.header{
+	width: 100%;
+	height: 500px;
+	background: url(img/13003.png);
+}
+#text{
+	text-align: center;
+	padding-top: 200px;
+	font-size: 50px;
+}
+.menu{
+	width: 100%;
+	height: 60px;
+	background: #00B7FF;
+	margin-top: -16px;
+
+}
+.headhesive{
+	position: fixed;
+	width: 100%;
+	height: 75px;
+	transform: translateY(-100%);
+	transition: 0.5s;
+	background: #00B7FF;
+	opacity: 1;
+}
+.headhesive--stick{
+	transform: translateY(0);
+}
+#about{
+	margin-top: 250px;
+	width: 100%;
+	height: 500px;
+	border: 1px solid #00B7FF;
+}
+.information{
+	max-width: 700px;
+	height: 350px;
+	border: 1px solid #00b7FF;
+	margin-left: 50%;
+	margin-top: -400px;
+}
+#info_text{
+	text-align: center;
+}
+#text2{
+	text-align: center;
+	color: #fff;
+}
+#text3{
+	text-align: center;
+	color: #fff;
+	margin-top: 50px;
+	font-size: 50px;
+}
+.content{
+	width: 100%;
+	text-align: center;
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.content div{
+	width: 100%;
+	max-width: 400px;
+	height: 250px;
+	border: 1px solid #00B7FF;
+    margin: 10px;
+    margin-top: 70px;
+    
+}
+.fon{
+	background: url(img/low-poly-blue-1223045.png);
+}
+h1{
+	margin: 0;
+	padding: 0;
+	margin-left: 1%;
+	padding-top: 10px;
+	color: #fff;
+}
+li{
+	display: inline-block;
+	position: absolute;
+	margin-top: 20px;
+}
+a{
+	text-decoration: none;
+	font-size: 20px;
+	color: #fff;
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    height: 45px;
+    vertical-align: middle;
+    margin-top: -20px;
+    padding-top: 16px;
+
+}
+a:hover{
+	background: #f5f5f5f5;
+	transition: 1s;
+}
+
+
+.myavatar{
+	
+	height: 350px;
+	background: #fff;
+    margin-left: 30px;
+}
+#my_avatar{
+	margin-left: 250px;
+}
+.prise{
+	max-width: 1280px;
+	height: 800px;
+	margin: 0 auto;
+	margin-top: 600px;
+}
+.text4{
+	text-align: center;
+	text-transform: uppercase;
+}
+.contacts{
+	max-width: 1130px;
+	height: 0px;
+	margin: 0 auto;
+	margin-top: 100px;
+    border-bottom: 120px solid #00B7FF;
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+    transform: rotate(180deg);
+}
+
+#line{
+	max-width: 100px;
+	height: 10px;
+	background: #fff;
+	margin-left: 46.5%;
+	border-radius: 10px;
+}
+@media screen and (max-width: 1280px){
+.prise{
+	margin-top: 600px;
+}
+}
+
+
+@media screen and (max-width: 860px){
+	.prise{
+		margin-top: 600px;
+	}
+}	
+.calc {
+  max-width: 1276px;
+  height: 650px;
+  border: 2px solid #00B7FF;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: top;
+}
+
+.tabs {
+  width: 100%;
+  padding-top: 26px;
+  padding-bottom: 35px;
+  display: flex;
+  justify-content: center;
+}
+
+.tabs .tab-left,
+.tabs .tab-right {
+  width: 200px;
+  height: 70px;
+  border-radius: 0 15px 0 0;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.77) 0%, #323131 100%);
+  margin-right: 5px;
+  color: #cecece;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 70px;
+  cursor: pointer;
+}
+
+.tabs .tab-left {
+  border-radius: 15px 0 0 0;
+}
+
+.tabs .active {
+  background: #00B7FF;
+  color: #000;
+  position: relative;
+}
+
+.tabs .active:before {
+  content: '';
+  position: absolute;
+  width: 200px;
+  height: 1px;
+  background-color: #00B7FF;
+  left: 0;
+  bottom: -6px;
+}
+
+.counter {
+  width: 132px;
+  height: 60px;
+  border: 3px solid #00B7FF;
+  background-color: transparent;
+  text-align: center;
+  color: #00B7FF;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.blocks {
+  width: 65%;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.blocks-title {
+  position: relative;
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.blocks-title:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #00B7FF;
+  bottom: 0;
+  left: 0;
+}
+
+#pages-block {
+  display: none;
+}
+
+.addiction {
+  font-size: 30px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.addiction-title {
+  text-align: center;
+}
+
+.addiction-block {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.addiction-block input[type="checkbox"] {
+  width: 29px;
+  height: 29px;
+  opacity: .5;
+}
+
+.total {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.total-count {
+  width: 200px;
+  height: 60px;
+  background-color: transparent;
+  border: none;
+  color: #00B7FF;
+  text-align: right;
+  font-size: 56px;
+  font-weight: 700;
+}

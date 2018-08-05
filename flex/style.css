@@ -1,0 +1,18 @@
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+  width: 370px;
+  background-color: #f45343;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+}
+.block {
+  width: 450px;
+  height: 200px;
+  border: 1px solid #000;
+  margin: 10px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 100px;
+  }
