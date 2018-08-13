@@ -5,29 +5,30 @@ body{
 .header{
 	width: 100%;
 	height: 500px;
-	background: url(img/video.png);
+	background: #222;
 }
 #text{
 	text-align: center;
 	padding-top: 200px;
 	font-size: 50px;
-	color: #00B7FF;
+	color: #fff;
 }
 .menu{
 	width: 100%;
-	height: 60px;
-	background: #00B7FF;
+	height: 70px;
+	background: #0076c0;
 	margin-top: -16px;
 
 }
 .headhesive{
 	position: fixed;
 	width: 100%;
-	height: 75px;
+	height: 85px;
 	transform: translateY(-100%);
 	transition: 0.5s;
-	background: #00B7FF;
+	background: #0076c0;
 	opacity: 1;
+  z-index: 2;
 }
 .headhesive--stick{
 	transform: translateY(0);
@@ -39,21 +40,27 @@ body{
 	justify-content: center;   
 }
 .about .mainblocks{
-	width: 400px;
-	height: 300px;
-	margin: 250px 0 0 0;
-	border: 1px solid #00B7FF;	
+	width: 485px;
+	height: 235px;
+	margin: 250px 5px 0 0;
+}
+#photo{
+  border: 1px solid #0076c0;
 }
 #h1{
-	color: #00B7FF;
+	color: #111;
 }
 #textinfo{
 	text-align: center;
-	color: #00B7FF;
+	color: #111;
+}
+.image{
+    margin-top: -15px;
+    padding-right: 50px;
 }
 #text3{
 	text-align: center;
-	color: #00B7ff;
+	color: #111;
 	margin-top: 50px;
 	font-size: 50px;
 }
@@ -61,37 +68,32 @@ body{
 	width: 100%;
 	text-align: center;
 	display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .content div{
 	width: 100%;
 	max-width: 500px;
 	height: 300px;
-	border: 1px solid #00B7FF;
-    margin: 10px;
-    margin-top: 70px;
-    
+  margin: 10px;   
 }
+
 
 
 p{
 	font-size: 40px;
-	color: #00B7FF;
+	color: #111;
 }
 .content div .bl_img:hover{
 	transform: scale(1.1);
 	transition: transform 0.4s linear 0.1s;
-}
-.fon{
-	background: #fff;
 }
 h1{
 	margin: 0;
 	padding: 0;
 	margin-left: 1%;
 	padding-top: 10px;
-	color: #fff;
+	color: #111;
 }
 li{
 	display: inline-block;
@@ -100,15 +102,15 @@ li{
 }
 a{
 	text-decoration: none;
-	font-size: 20px;
+	font-size: 25px;
 	color: #fff;
-    display: inline-block;
-    width: 100px;
-    text-align: center;
-    height: 45px;
-    vertical-align: middle;
-    margin-top: -20px;
-    padding-top: 16px;
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  height: 53px;
+  vertical-align: middle;
+  margin-top: -50px;
+  padding-top: 18px;
 
 }
 a:hover{
@@ -119,13 +121,7 @@ a:hover{
 
 
 
-.prise{
-	max-width: 1280px;
-	height: 800px;
-	margin: 0 auto;
-	margin-top: 600px;
-	display: none;
-}
+
 .text4{
 	text-align: center;
 	text-transform: uppercase;
@@ -134,21 +130,18 @@ a:hover{
 	max-width: 100%;
 	height: 150px;
 	margin: 0 auto;
-	background: #00B7FF;
+	background: #222;
 	margin-top: 100px;
     
 }
 @media screen and (max-width: 1280px){
-.prise{
-	margin-top: 600px;
-}
 .headhesive{	
 	max-width: 2000px;
 	height: 100px;
-	line-height: 40px;
+	line-height: 50px;
 }
 a{
-	height: 68px;
+
 }
 }
 @media screen and (max-width: 1220px){
@@ -156,153 +149,57 @@ a{
 		flex-direction: column;
 	}
 	.about .mainblocks{
-		margin: 0 auto;
+		margin: 5px auto;
 	}
+  #photo{
+    margin-top: 500px;
+  }
 	#name1{
 		margin-top: 250px;
 	}
 }
 
 @media screen and (max-width: 860px){
-	.prise{
-		margin-top: 600px;
-	}
+
 }	
-.calc {
-  max-width: 1276px;
-  height: 650px;
-  border: 2px solid #00B7FF;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: top;
+
+
+
+.main{
+  width: 500px;
+  margin-left: -16px;
 }
 
-.tabs {
-  width: 100%;
-  padding-top: 26px;
-  padding-bottom: 35px;
-  display: flex;
-  justify-content: center;
+.wrapper .active {
+  color: #0076c0;
+  border-bottom: 1px solid #fff;
+  background: #fff;
 }
 
-.tabs .tab-left,
-.tabs .tab-right {
-  width: 200px;
-  height: 70px;
-  border-radius: 0 15px 0 0;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.77) 0%, #323131 100%);
-  margin-right: 5px;
-  color: #cecece;
-  font-size: 18px;
-  font-weight: 700;
-  text-align: center;
-  line-height: 70px;
+.tabs{
+  margin-left: 1em;
+  display: flex;
+}
+
+.tab{
   cursor: pointer;
-}
-
-.tabs .tab-left {
-  border-radius: 15px 0 0 0;
-}
-
-.tabs .active {
-  background: #00B7FF;
-  color: #000;
+  border: 1px solid #0076c0;
+  border-radius: 3px 3px 0 0;
+  padding: .5em 1em;
+  display: inline-block;
+  margin-bottom: -1px;
   position: relative;
-}
-
-.tabs .active:before {
-  content: '';
-  position: absolute;
-  width: 200px;
-  height: 1px;
-  background-color: #00B7FF;
-  left: 0;
-  bottom: -6px;
-}
-
-.counter {
-  width: 132px;
-  height: 60px;
-  border: 3px solid #00B7FF;
-  background-color: transparent;
-  text-align: center;
-  color: #00B7FF;
-  font-size: 48px;
-  font-weight: 700;
-}
-
-.blocks {
-  width: 65%;
-  margin-bottom: 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.blocks-title {
-  position: relative;
-  color: #ffffff;
-  font-family: "Open Sans";
+  z-index: 1;
+  background: #fff;
+  width: 300px;
   font-size: 30px;
-  font-weight: 700;
 }
-
-.blocks-title:before {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 1px;
-  background-color: #00B7FF;
-  bottom: 0;
-  left: 0;
-}
-
-#pages-block {
-  display: none;
-}
-
-.addiction {
+.tab_item {
+  border: 1px solid #0076c0;
+  border-radius: 3px;
+  padding: 0 1em;
+  width: 423px;
+  height: 170px;
+  margin-left: 16px;
   font-size: 30px;
-  font-weight: 700;
-  color: #fff;
-}
-
-.addiction-title {
-  text-align: center;
-}
-
-.addiction-block {
-  margin-top: 20px;
-  text-align: left;
-}
-
-.addiction-block input[type="checkbox"] {
-  width: 29px;
-  height: 29px;
-  opacity: .5;
-}
-
-.total {
-  width: 60%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 60px;
-  margin-bottom: 30px;
-  color: #ffffff;
-  font-size: 36px;
-  font-weight: 700;
-}
-
-.total-count {
-  width: 200px;
-  height: 60px;
-  background-color: transparent;
-  border: none;
-  color: #00B7FF;
-  text-align: right;
-  font-size: 56px;
-  font-weight: 700;
 }

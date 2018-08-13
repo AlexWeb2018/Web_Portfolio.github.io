@@ -4,10 +4,10 @@
 	<meta charset="UTF-8">
 	<title>портфолио</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="shortcut icon" href="img/46455.png" type="image/png">
+	<link rel="shortcut icon" href="img/22222.png" type="image/png">
        <link rel="stylesheet" type="text/css" href="animate.css">
        <link rel="stylesheet" type="text/css" href="hover.css">
-       <meta content="width=600" name="viewport" id="viewport">
+       <meta content="width=1180" name="viewport" id="viewport">
 </head>
 <body>
 
@@ -17,16 +17,15 @@
      <h1 class="wow bounce" id="text">Alex Web Developer</h1>
 
 </div>
-<div class="fon">
       
        <div class="menu">                	      
        		<ul>
        			<li>
+             <img class="image" src="img/3333.png"> 
        				<a href="#">Home</a>
        				<a href="#about">About me</a>
-       				<a href="#content">Progects</a>
-              		<a href="#prise"><strike>Prise</strike></a>
-              		<a href="#contacts">Contacts</a>
+       				<a href="#content">Progects</a>    
+              <a href="#contacts">Contacts</a>
        			</li>
        		</ul>       
        </div>    
@@ -35,82 +34,42 @@
 
 
 
-		<div id="about" class="about wow fadeIn">
-				<div id="name1" class="mainblocks"><h1 id="h1">Hobby</h1>
-					<p>Video editing, photoshop, website development)</p>
-				</div>
+		<div id="about" class="about">
+		
 
+<div id="photo" class="mainblocks"></div>
+<div class="mainblocks">
+ <div class="main">
+        <div class="wrapper">
+              <div class="tabs">
+                  <span class="tab">Hobbies</span>
+                  <span class="tab">I know</span>       
+              </div>
+              <div class="tab_content">
+                  <div class="tab_item">Video edition,photoshop,website development</div>
+                  <div class="tab_item">HTML,CSS,Javascript</div>
+              </div>
+        </div>        
+      </div>
+    </div>
 
-				<div id="name2" class="mainblocks"><img src="img/Без имени-1.png"></div>
-
-
-				<div id="name3" class="mainblocks"><h1 id="h1">I Know</h1>
-					<p>HTML,CSS,JavaScript</p>
-				</div>
 		</div>
 
+  
 <h1 class="wow fadeIn" id="text3">
               Projects
        </h1>
 
 <div id="content" class="content wow fadeIn">
-<div class="block wo fadeInLeft"><img class="bl_img" src="img/13003.png" width="100%" height="100%"></div>
-<div class="block wo fadeInDown"><img class="bl_img" src="img/17442.jpg" width="100%" height="100%"></div>
-<div class="block wo fadeInRight"><img class="bl_img" src="img/2.png" width="100%" height="100%"></div>
-<div class="block wo fadeInRight"><img class="bl_img" src="img/2.png" width="100%" height="100%"></div>
+<div><img class="bl_img" src="img/2.png" width="100%" height="100%"></div>
+<div><img class="bl_img" src="img/2.png" width="100%" height="100%"></div>
+<div><img class="bl_img" src="img/2.png" width="100%" height="100%"></div>
+<div><img class="bl_img" src="img/2.png" width="100%" height="100%"></div>
 </div>
         
 
        
-<div id="prise" class="prise">
-       <h1 class="text4">Prise</h1>
-       
-
-
-                                          <div class="calc">
-                                        <div class="tabs">
-                                          <div class="tab-left active">Лэндинг</div>
-                                          <div class="tab-right">Многостраничник</div>
-                                        </div>
-                                        <div class="blocks" id="blocks-block">
-                                          <div class="blocks-title">Количество блоков</div>
-                                          <input type="number" class="counter" id="counter-block">
-                                        </div>
-                                        <div class="blocks" id="pages-block">
-                                          <div class="blocks-title">Количество страниц</div>
-                                          <input type="number" class="counter" id="counter-pages">
-                                        </div>
-                                        <div class="blocks">
-                                          <div class="blocks-title">Сколько часов на проект</div>
-                                          <input type="number" class="counter" id="counter-hours">
-                                        </div>
-                                        <div class="blocks">
-                                          <div class="blocks-title">Стоимость вашего часа</div>
-                                          <input type="number" class="counter" id="counter-rate">
-                                        </div>
-                                        <div class="addiction">
-                                          <div class="addiction-title">Дополнительно</div>
-                                          <div class="addiction-block">
-                                            <input class="checkbox" type="checkbox" id="changes-check">
-                                            Возможность редактировать текст на сайте
-                                          </div>
-                                          <div class="addiction-block">
-                                            <input class="checkbox" type="checkbox" id="cms-check">
-                                            Установка на CMS
-                                          </div>
-                                        </div>
-                                        <div class="total">
-                                       Общая стоимость
-                                       <input value="5000" class="total-count" type="text" id="total-value">
-                                    
-                                       </div>
-                                     </div>
- 
-
-
-
-       
-</div>
+  
 
 
 <div id="contacts" class="contacts wow zoomInDown">
@@ -122,7 +81,6 @@
 
 
       
-</div>
 
 
 
@@ -131,7 +89,14 @@
 
 
 
-
+<script src="http://yastatic.net/jquery/2.1.3/jquery.min.js"></script>
+    <script>
+                $(".tab_item").not(":first").hide();
+          $(".wrapper .tab").click(function() {
+            $(".wrapper .tab").removeClass("active").eq($(this).index()).addClass("active");
+            $(".tab_item").hide().eq($(this).index()).fadeIn()
+          }).eq(0).addClass("active");
+    </script>
 
 
 
@@ -139,14 +104,10 @@
 
 
 <script type="text/javascript" src="js/headhesive.min.js"></script>
-<script type="text/javascript" src="js/script.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquerry/1.11.0/jquerry.min.js"></script>
 <script type="text/javascript" src="js/wow.min.js"></script>
 <script>
     new WOW().init();
 </script>
-<script type="text/javascript" src="js/particles.min.js"></script>
-<script type="text/javascript" src="js/jquerry.js"></script>
 <script type="text/javascript" src="js/stickymenu.js"></script>
 </body>
 </html>
