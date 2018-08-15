@@ -104,13 +104,13 @@ a{
 	text-decoration: none;
 	font-size: 25px;
 	color: #fff;
-  display: inline-block;
-  width: 100px;
-  text-align: center;
-  height: 53px;
-  vertical-align: middle;
-  margin-top: -50px;
-  padding-top: 18px;
+  	display: inline-block;
+  	width: 100px;
+ 	text-align: center;
+ 	height: 53px;
+  	vertical-align: middle;
+  	margin: -50px 10px auto;
+  	padding-top: 18px;
 
 }
 a:hover{
