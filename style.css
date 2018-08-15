@@ -44,9 +44,6 @@ body{
 	height: 235px;
 	margin: 250px 5px 0 0;
 }
-#photo{
-  
-}
 #avatar{
 	margin-top: -17px;
 	width: 64%;
@@ -60,7 +57,7 @@ body{
 }
 .image{
     margin-top: -15px;
-    padding-right: 10px;
+    padding-right: 5px;
 }
 #text3{
 	text-align: center;
@@ -163,7 +160,9 @@ a{
 }
 
 @media screen and (max-width: 860px){
-
+	a{
+		margin-left: -10px;
+	}
 }	
 
 
