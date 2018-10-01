@@ -47,7 +47,7 @@ nav{
 nav li{
 	display: inline-block;
 	padding: 14px 40px;
-	font-size: 12px;
+	font-size: 16px;
 	font-weight: 400;
 }
 nav li a{
@@ -129,46 +129,11 @@ nav li a:hover{
 .btn:focus {
 	outline: none;
 }
-.btn:before{
-	content: '';
-	display: block;
-	position: absolute;
-	background: rgba(255,255,255,.5);
-	width: 60px;
-	height: 100%;
-	left: 0;
-	top: 0;
-	opacity: .5s;
-	filter: blur(30px);
-	transform: translateX(-130px) skewX(-15deg);
-}
-.btn:after{
-	content: '';
-	display: block;
-	position: absolute;
-	background: rgba(255,255,255,.2);
-	width: 30px;
-	height: 100%;
-	left: 30px;
-	top: 0;
-	opacity: 0;
-	filter: blur(30px);
-	transform: translate(-100px) skewX(-15deg); 
-}
 .btn:hover{
 	background: #338033;
 	cursor: pointer;
 }
-.btn:hover:before{
-	transform: translateX(300px) skewX(-15deg);
-	opacity: .6;
-	transition: .7s;
-}
-.btn:hover:after{
-	transform: translateX(300px) skewX(-15deg);
-	opacity: 1;
-	transition: .7s;
-}
+
 /*/about*/
 
 /*work*/
